@@ -3,6 +3,7 @@ from .models import Product
 from django.contrib import messages
 from django.core.files.storage import FileSystemStorage
 from .forms import ProductForm
+from django.utils.translation import activate
 # Create your views here.
 
 from django.contrib.auth.models import User
@@ -30,6 +31,7 @@ def signup(request):
 
 
 def index(request):
+    activate('en')
     context= {
         "all_products": Product.objects.all(),
         "isLogged": True,
