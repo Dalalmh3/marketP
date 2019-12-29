@@ -40,7 +40,11 @@ def index(request):
     return render(request, "MarketPlaceApp/index.html", context ) 
 
 
-
+def All_Products(request):
+    context= {
+        "all_products": Product.objects.all(),
+    }
+    return render(request, 'MarketPlaceApp/all_products.html',context)
  
 @login_required()
 def Add_Product(request):
