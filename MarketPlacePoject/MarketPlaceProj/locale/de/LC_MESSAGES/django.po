@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-29 13:38-0800\n"
+"POT-Creation-Date: 2019-12-30 09:51-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: templates/MarketPlaceApp/index.html:79
+#: MarketPlaceProj/MarketPlaceApp/templates/MarketPlaceApp/all_products.html:26
 msgid "WelcomeHeading"
 msgstr "Willkommen auf unserer Seite!"
 
-#: templates/MarketPlaceApp/index.html:80
+#: MarketPlaceProj/MarketPlaceApp/templates/MarketPlaceApp/all_products.html:27
 msgid "WelcomeMessage"
 msgstr "Hier findet Ihr Umfragen."
-

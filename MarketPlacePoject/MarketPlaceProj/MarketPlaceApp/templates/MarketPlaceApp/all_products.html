@@ -1,7 +1,12 @@
 {% extends 'MarketPlaceApp/base.html' %}
 
+{% load i18n %}
+
 
 {% block content %}
+
+<h1>{% trans 'WelcomeHeading' %}</h1>
+<p>{% trans 'WelcomeMessage' %}</p>
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -20,11 +25,6 @@
     </div>
   </div>
 </nav>
-
-{% load i18n %}
- 
-<h1>{% trans 'WelcomeHeading' %}</h1>
-<p>{% trans 'WelcomeMessage' %}</p>
 
     <!-- Portfolio Grid -->
     <section class="bg-light page-section" id="portfolio">
