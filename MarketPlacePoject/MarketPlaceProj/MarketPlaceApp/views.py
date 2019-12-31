@@ -33,12 +33,12 @@ def signup(request):
     })
 
 
-
+title = _("HomePage")
 def index(request):
     context= {
         "all_products": Product.objects.all(),
         "isLogged": True,
-        "title" : "HomePage"
+        "title" : title
     }
 
     if request.session.is_empty():
