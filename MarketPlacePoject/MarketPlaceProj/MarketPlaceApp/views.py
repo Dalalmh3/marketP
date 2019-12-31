@@ -33,9 +33,11 @@ def signup(request):
     })
 
 
-title = _("HomePage")
+
 def index(request):
-    context= {
+
+    title = _("HomePage")
+    context= { 
         "all_products": Product.objects.all(),
         "isLogged": True,
         "title" : title
