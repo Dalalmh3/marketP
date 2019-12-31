@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-30 09:51-0800\n"
+"POT-Creation-Date: 2019-12-31 11:30-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,10 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: MarketPlaceProj/MarketPlaceApp/templates/MarketPlaceApp/all_products.html:26
+#: MarketPlaceApp/templates/MarketPlaceApp/all_products.html:8
 msgid "WelcomeHeading"
 msgstr "Willkommen auf unserer Seite!"
 
-#: MarketPlaceProj/MarketPlaceApp/templates/MarketPlaceApp/all_products.html:27
+#: MarketPlaceApp/templates/MarketPlaceApp/all_products.html:9
 msgid "WelcomeMessage"
 msgstr "Hier findet Ihr Umfragen."
+
+#: MarketPlaceApp/views.py:57
+msgid "HomePage"
+msgstr "papai"
+

@@ -20,16 +20,20 @@ from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from MarketPlaceApp import views
 from django.conf.urls.i18n import i18n_patterns
-
+from django.utils.translation import gettext_lazy as _
 
 urlpatterns = [
+    url(r'^i18n/', include('django.conf.urls.i18n')),
     url(r'^admin/', admin.site.urls),
+    url(r'accounts/', include('django.contrib.auth.urls')),
+    url(r'^', include('MarketPlaceApp.urls'))
 ]
 
-urlpatterns += i18n_patterns (
-    url(r'accounts/', include('django.contrib.auth.urls')),
-    url(r'^', include('MarketPlaceApp.urls')),prefix_default_language=False
-)
+# urlpatterns += i18n_patterns (
+#     url(r'^admin/', admin.site.urls),
+#     url(r'accounts/', include('django.contrib.auth.urls')),
+#     url(r'^', include('MarketPlaceApp.urls')),prefix_default_language=False ,
+# )
 
 
 if settings.DEBUG:

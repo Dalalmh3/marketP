@@ -14,6 +14,10 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth import logout as django_logout
 
 
+from django.utils.translation import gettext as _
+from django.utils import translation
+
+
 
 
 def signup(request):
@@ -31,10 +35,10 @@ def signup(request):
 
 
 def index(request):
-    activate('en')
     context= {
         "all_products": Product.objects.all(),
         "isLogged": True,
+        "title" : "HomePage"
     }
 
     if request.session.is_empty():
