@@ -14,13 +14,13 @@ class ProductForm(forms.ModelForm):
         self.helper.form_method = 'post' 
         
         self.helper.layout = Layout(
-            'pName','description','img_url',
+            'Product_Name_En','Product_Name_Ar','description','img_url',
             Submit('submit','create', css_class='btn-success')
         )
         
     class Meta:
         model = Product
-        fields = ('pName','description', 'img_url')
+        fields = ('Product_Name_En','Product_Name_Ar','description', 'img_url')
 
 
     

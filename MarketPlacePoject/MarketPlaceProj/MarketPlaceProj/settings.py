@@ -101,8 +101,12 @@ WSGI_APPLICATION = 'MarketPlaceProj.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'marketplace_db',
+        'USER': 'postg2',
+        'PASSWORD': '1234',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -131,7 +135,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-LANGUAGE_CODE = 'de'
+LANGUAGE_CODE = 'ar'
 # LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 
@@ -147,7 +151,6 @@ LOCALE_PATHS = [
 
 LANGUAGES = [
     ('en','English'),
-    ('de','Deutsch'),
     ('ar','Arabic'),
 ]
 

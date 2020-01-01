@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-31 15:35-0800\n"
+"POT-Creation-Date: 2020-01-01 08:51-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,42 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
+#: MarketPlaceApp/templates/MarketPlaceApp/add_product.html:21
+msgid "logout"
+msgstr "تسجيل الخروج"
+
+#: MarketPlaceApp/templates/MarketPlaceApp/all_products.html:16
+#: MarketPlaceApp/templates/registration/login.html:18
+msgid "Back"
+msgstr "رجوع"
+
+#: MarketPlaceApp/templates/MarketPlaceApp/index.html:68
+msgid "Products"
+msgstr "المنتجات"
+
+#: MarketPlaceApp/templates/MarketPlaceApp/index.html:72
+msgid "Contact"
+msgstr "التواصل"
+
+#: MarketPlaceApp/templates/MarketPlaceApp/index.html:76
+msgid "Add Product"
+msgstr "إضافة منتج"
+
+#: MarketPlaceApp/templates/MarketPlaceApp/index.html:80
+msgid "Logout"
+msgstr "تسجيل خروج"
+
+#: MarketPlaceApp/templates/MarketPlaceApp/index.html:85
+msgid "Login"
+msgstr "تسجيل دخول"
+
 #: MarketPlaceApp/templates/MarketPlaceApp/index.html:97
 msgid "Welcome To Our Market!"
 msgstr "مرحبا"
 
 #: MarketPlaceApp/templates/MarketPlaceApp/index.html:98
-msgid "It"
-msgstr ""
+msgid "It is Nice To Meet You"
+msgstr "تجربة"
 
 #: MarketPlaceApp/views.py:39
 msgid "HomePage"

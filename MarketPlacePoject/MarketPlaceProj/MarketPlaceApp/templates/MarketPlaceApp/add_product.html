@@ -1,10 +1,8 @@
-
-
 {% extends 'MarketPlaceApp/base.html' %}
 
 {% load crispy_forms_tags %}
 
-
+{% load i18n %}
 {% block content %}
 
 <!-- Navigation -->
@@ -18,7 +16,10 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav text-uppercase ml-auto">
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="/logout">logout</a>
+          <a class="nav-link js-scroll-trigger" href="/">{% trans 'Back' %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/logout">{% trans 'logout' %}</a>
         </li>
       </ul>
     </div>
